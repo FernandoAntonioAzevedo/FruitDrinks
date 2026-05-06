@@ -1,0 +1,64 @@
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  --white-color: hsl(0, 0%, 100%);
+  --black-color: hsl(0, 0%, 0%);
+
+  /*========== Font family ==========*/
+  --body-font: 'Clash Display', sans-serif;
+
+  /*========== Font sizes ==========*/
+  --h1-font-size: 2rem;
+  --h2-font-size: 1.5rem;
+  --normal-font-size: 1rem;
+
+  /*========== Font weight ==========*/
+  --font-semibold: 600;
+  --font-bold: 700;
+}
+
+/* Responsive typography */
+@media screen and (max-width: 1024px) {
+}
+
+/*=============== BASE ===============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--black-color);
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*=============== HEADER & NAV ===============*/
+
+/* Change background header */
+
+/*=============== HOME ===============*/
+
+/* Swiper */
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 1024px) {
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+}
