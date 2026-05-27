@@ -48,7 +48,7 @@ img {
 
 /*=============== HEADER & NAV ===============*/
 .header {
-  background-color: rebeccapurple;
+  background-color: transparent;
   position: fixed;
   top: 0;
   left: 0;
@@ -98,8 +98,40 @@ img {
 /* Change background header */
 
 /*=============== HOME ===============*/
+.home {
+  min-height: 100dvh;
+  height: 900px;
+}
+
+.home-data {
+  background-color: var(--background-color);
+}
+
+.home-title {
+  color: var(--white-color);
+  font-size: clamp(5.5rem, -1.1667rem + 33.333vw, 28rem);
+  font-weight: var(--font-semibold);
+  position: absolute;
+  top: calc(50% - 4.25rem);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home-mockup {
+  position: absolute;
+  top: calc(50% - 2.25rem);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(9.375rem, 5.5568rem + 19.0909vw, 19.875rem);
+  aspect-ratio: 45 / 83;
+  background: url(../images/can.png);
+  z-index: 100;
+}
 
 /* Swiper */
+.swiper {
+  height: 100%;
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
