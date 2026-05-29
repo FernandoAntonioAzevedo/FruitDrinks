@@ -101,6 +101,7 @@ img {
 .home {
   min-height: 100dvh;
   height: 900px;
+  position: relative;
 }
 
 .home-data {
@@ -124,7 +125,13 @@ img {
   transform: translate(-50%, -50%);
   width: clamp(9.375rem, 5.5568rem + 19.0909vw, 19.875rem);
   aspect-ratio: 45 / 83;
-  background: url(../images/can.png);
+  --left: 0;
+  background: url(../images/labels.png) var(--left), url(../images/can.png);
+  background-size: auto 100%;
+  background-blend-mode: multiply;
+  mask-image: url(../images//can.png);
+  mask-size: auto 100%;
+  mask-repeat: no-repeat;
   z-index: 100;
 }
 

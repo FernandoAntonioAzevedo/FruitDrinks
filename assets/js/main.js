@@ -16,6 +16,17 @@ var firstSwiper = new Swiper('.first-swiper', {
 		delay: 2500,
 		disableOnInteraction: false,
 	},
+
+	on: {
+		slideChange: function() {
+			const slideIndex = this.realIndex;
+			const isAtFirstSlide = slideIndex === 0;
+			const left = isAtFirstSlide ? 0.25 : slideIndex * 50;
+
+			const mockupImage = document.getElementById('home-mockup');
+			mockupImage.style.setProperty('--left', `${left}%`);
+		},
+	},
 });
 
 /*=============== SECOND SWIPER ===============*/
