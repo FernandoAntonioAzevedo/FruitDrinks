@@ -120,7 +120,7 @@ img {
 
 .home-mockup {
   position: absolute;
-  top: calc(50% - 2.25rem);
+  top: calc(50% + 2.25rem);
   left: 50%;
   transform: translate(-50%, -50%);
   width: clamp(9.375rem, 5.5568rem + 19.0909vw, 19.875rem);
@@ -133,6 +133,7 @@ img {
   mask-size: auto 100%;
   mask-repeat: no-repeat;
   z-index: 100;
+  transition: background 1s ease-in;
 }
 
 .second-swiper {
