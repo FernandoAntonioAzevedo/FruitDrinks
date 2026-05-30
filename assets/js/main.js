@@ -30,7 +30,13 @@ var firstSwiper = new Swiper('.first-swiper', {
 });
 
 /*=============== SECOND SWIPER ===============*/
+var secondSwiper = new Swiper('.second-swiper', {
+	loop: true,
+	direction: 'vertical',
+});
+
 
 /*=============== SYNCHRONIZING SWIPERS ===============*/
+firstSwiper.controller.control = secondSwiper;
 
 /*=============== GSAP ANIMATION ===============*/

@@ -135,6 +135,33 @@ img {
   z-index: 100;
 }
 
+.second-swiper {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.home-fruit-img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.home-button {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--white-color);
+  padding: 1.25rem 2.25rem;
+  border-radius: 2rem;
+  color: var(--black-color);
+  font-weight: var(--font-semibold);
+  z-index: 100;
+}
+
 /* Swiper */
 .swiper {
   height: 100%;
