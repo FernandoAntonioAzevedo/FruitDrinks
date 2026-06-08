@@ -17,8 +17,14 @@ window.addEventListener('scroll', scrollHeader);
 
 /*=============== HOME HEIGHT ===============*/
 const homeHight = () => {
-	const home = document.getElementById('home')
-}
+	const home = document.getElementById('home');
+	const mockup = document.getElementById('home-mockup');
+
+	home.style.height = `${mockup.offsetHeight + 313}px`;
+};
+
+window.addEventListener('load', homeHeight);
+window.addEventListener('resize', homeHeight);
 
 /*=============== FIRST SWIPER ===============*/
 var firstSwiper = new Swiper('.first-swiper', {

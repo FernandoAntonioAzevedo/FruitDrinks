@@ -19,6 +19,11 @@
 
 /* Responsive typography */
 @media screen and (max-width: 1024px) {
+  :root {
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: 0.938rem;
+  }
 }
 
 /*=============== BASE ===============*/
@@ -180,6 +185,12 @@ img {
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 1024px) {
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--white-color);
+  }
 }
 
 /* For medium devices */
