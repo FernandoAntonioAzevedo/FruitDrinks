@@ -54,6 +54,7 @@ img {
   left: 0;
   width: 100%;
   z-index: 1000;
+  transition: background 0.3s;
 }
 
 .nav,
@@ -75,6 +76,7 @@ img {
   color: var(--white-color);
   font-size: var(--h1-font-size);
   font-weight: var(--font-bold);
+  transition: color 0.3s;
 }
 
 .nav-list {
@@ -96,6 +98,13 @@ img {
 }
 
 /* Change background header */
+.bg-header {
+  background-color: var(--white-color);
+}
+
+.bg-header .nav-logo {
+  color: var(--black-color);
+}
 
 /*=============== HOME ===============*/
 .home {

@@ -16,6 +16,9 @@ const scrollHeader = () => {
 window.addEventListener('scroll', scrollHeader);
 
 /*=============== HOME HEIGHT ===============*/
+const homeHight = () => {
+	const home = document.getElementById('home')
+}
 
 /*=============== FIRST SWIPER ===============*/
 var firstSwiper = new Swiper('.first-swiper', {
