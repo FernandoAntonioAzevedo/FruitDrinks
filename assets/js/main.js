@@ -25,7 +25,7 @@ const scrollHeader = () => {
 window.addEventListener('scroll', scrollHeader);
 
 /*=============== HOME HEIGHT ===============*/
-const homeHight = () => {
+const homeHeight = () => {
 	const home = document.getElementById('home');
 	const mockup = document.getElementById('home-mockup');
 
@@ -67,3 +67,14 @@ var secondSwiper = new Swiper('.second-swiper', {
 firstSwiper.controller.control = secondSwiper;
 
 /*=============== GSAP ANIMATION ===============*/
+gsap.from('.home-title-animate',{
+	x: 1000,
+	duration: 1,
+	ease: 'power1.in'
+});
+
+gsap.from('.home-fruit-animate',{
+	x: 1000,
+	duration: 1,
+	ease: 'power1.in'
+});
